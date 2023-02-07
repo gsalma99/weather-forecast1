@@ -15,26 +15,27 @@
     />
 </head>
 <body class="application-body">
-  <header class="application-header">
+  <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
     <div class="h1-container d-flex bg-light justify-content-center">
-      <h1 class="header-text">Welcome to the Awesome Weather Dashboard</h1>
+      <h1 style="text-align: center; color:blue">Welcome to the Daily Weather Dashboard</h1> 
     </div>
   </header>
   <main class="application-main">
     <div class="container-fluid">
       <div class="row page-content align-items-center">
-          <div class="col-sm-4 bg-light p-3">
+          <div class="col-lg-3 pb-3">
             <div class="form-container text-center">
               <form id="search-form">
                 <label for="search-input" class="h4 font-weight-bold text-dark">
                   Please look up a city!
+
                 </label>
                 <div class="input-group mt-3">
                   <input
                     type="text"
                     id="search-input"
                     name="search-input"
-                    class="form-control form-control-lg rounded"
+                    class="h4 font-weight-bold text-dark"
                   />
                   <div class="input-group-append">
                     <button
@@ -66,7 +67,7 @@
                     <p class="current-number rounded" id="current-number"></p>
                   </div>
                   <div class="container-fluid my-5">
-                      <h2 class="text-center mb-3">Here is the 5 Day Forecast</h2>
+                      <h2 class="text-center mb-3">City 5 Day Forecast</h2>
                       <div class="row">
                         <div class="col-sm-2 future-card text-center">
                           <p class="future-date font-weight-bold mb-3" id="future-date-1"></p>
